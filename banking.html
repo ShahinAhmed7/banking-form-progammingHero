@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="text-gray-600 body-font max-w-4xl mx-auto">
+        <div class="container px-5 pt-24 pb-10 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h2 class="md:text-7xl text-4xl text-indigo-500 tracking-widest font-medium title-font mb-1">Let's get some money</h2>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3 justify-center text-center content-center w-full">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col shadow">
+                <div class="items-center mb-3">
+                  <h2 class="text-gray-900 text-2xl title-font font-medium">Deposit</h2>
+                  <h2 class="text-indigo-500 text-3xl title-font font-medium">$<span id="deposit-output">00</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 justify-center text-center content-center w-full">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col shadow">
+                <div class="items-center mb-3">
+                  <h2 class="text-gray-900 text-2xl title-font font-medium">Withdraw</h2>
+                  <h2 id="withdraw" class="text-indigo-500 text-3xl title-font font-medium">$00</h2>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 justify-center text-center content-center w-full">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col shadow">
+                <div class="items-center mb-3">
+                  <h2 class="text-gray-900 text-2xl title-font font-medium">Balance</h2>
+                  <h2 class="text-indigo-500 text-3xl title-font font-medium">$<span id="balance-total">1200</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <div class="container px-4 sm:px-8 mx-auto md:flex justify-center md:max-w-5xl gap-7 mb-16">
+     <!-- card wrapper -->
+     <div class="wrapper bg-gray-100 rounded-md shadow mb-8 md:flex-1">
+      <div class="card px-8 py-4">
+          <div class="card-text">
+              <h1 class="text-2xl md:text-2xl font-bold leading-tight text-indigo-800">Please Deposit</h1>
+          </div>
+          <div class="card-mail flex items-center my-10">
+              <input id="deposit-input" type="text" class="border-l border-t border-b border-gray-200 rounded-l-md w-full text-base px-3 py-2" placeholder="$ Amout you want deposit!">
+              <button id="deposit-button" class="bg-orange-500 bg-indigo-700 hover:bg-orange-600 hover:border-orange-600 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-orange-500">Deposit</button>
+          </div>
+      </div>
+  </div>
+    <!-- card wrapper -->
+    <div class="wrapper bg-gray-100 rounded-md shadow mb-8 md:flex-1">
+      <div class="card px-8 py-4">
+          <div class="card-text">
+              <h1 class="text-2xl md:text-2xl font-bold leading-tight text-indigo-800">Please Withdraw</h1>
+          </div>
+          <div class="card-mail flex items-center my-10">
+              <input type="text" class="border-l border-t border-b border-gray-200 rounded-l-md w-full text-base px-3 py-2" placeholder="$ Amout you want withdraw!">
+              <button class="bg-orange-500 bg-indigo-700 hover:bg-orange-600 hover:border-orange-600 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-orange-500">Withdraw</button>
+          </div>
+      </div>
+  </div>
+
+
+  </div>
+  
+<script src="banking.js"></script>
+</body>
+</html>
