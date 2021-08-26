@@ -1,9 +1,6 @@
 
-const depositBtn = document.getElementById('deposit-button');
 
-
-
-depositBtn.addEventListener('click', function(){
+document.getElementById('deposit-button').addEventListener('click', function(){
 
     // Deposit input
     const depositInput = document.getElementById('deposit-input');
@@ -12,9 +9,10 @@ depositBtn.addEventListener('click', function(){
     const newDepositAmountText = depositInput.value;
     const newDepositAmount = parseFloat(newDepositAmountText);
 
+
     // Deposit output
     const depositTotal = document.getElementById('deposit-output');
-    
+
     // Convert amount text to number
     const previusDepositText = depositTotal.innerText;
     const previusDepositAmount = parseFloat(previusDepositText);
@@ -54,7 +52,6 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     const withdrawInput = document.getElementById('withdraw-input');
     const withdrawAmountText = withdrawInput.value;
     const newWithdrawAmount = parseFloat(withdrawAmountText);
-    console.log(newWithdrawAmount);
 
 
     // Withdraw output total balance
@@ -77,7 +74,7 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
     balanceTotal.innerText = newBalanceTotal;
 
-    
+
     // Clear withdraw input
     withdrawInput.value = '';
 
