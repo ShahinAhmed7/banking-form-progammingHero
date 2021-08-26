@@ -15,7 +15,7 @@ document.getElementById('submit').addEventListener('click', function(){
 
     // Condition
     if(email == 'admin' && password == 123){
-        window.location.href = 'success.html';
+        window.location.href = 'banking.html';
     } else{
         wrongPassword.innerText = 'Please type valid user name and password!';
         wrongPassword.style.color = 'red';
