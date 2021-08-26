@@ -27,7 +27,7 @@
               <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col shadow">
                 <div class="items-center mb-3">
                   <h2 class="text-gray-900 text-2xl title-font font-medium">Withdraw</h2>
-                  <h2 id="withdraw" class="text-indigo-500 text-3xl title-font font-medium">$00</h2>
+                  <h2 class="text-indigo-500 text-3xl title-font font-medium">$<span id="withdraw-total">00</span></h2>
                 </div>
               </div>
             </div>
@@ -64,8 +64,8 @@
               <h1 class="text-2xl md:text-2xl font-bold leading-tight text-indigo-800">Please Withdraw</h1>
           </div>
           <div class="card-mail flex items-center my-10">
-              <input type="text" class="border-l border-t border-b border-gray-200 rounded-l-md w-full text-base px-3 py-2" placeholder="$ Amout you want withdraw!">
-              <button class="bg-orange-500 bg-indigo-700 hover:bg-orange-600 hover:border-orange-600 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-orange-500">Withdraw</button>
+              <input id="withdraw-input" type="text" class="border-l border-t border-b border-gray-200 rounded-l-md w-full text-base px-3 py-2" placeholder="$ Amout you want withdraw!">
+              <button id="withdraw-button" class="bg-orange-500 bg-indigo-700 hover:bg-orange-600 hover:border-orange-600 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-orange-500">Withdraw</button>
           </div>
       </div>
   </div>
